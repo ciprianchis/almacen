@@ -18,7 +18,7 @@ public final class Agua extends Producto{
 
 	@Override
 	public String toString() {
-		return super.toString() + "\n" + "Origen: " + origen;
+		return "\n" + "MINERAL" + super.toString() + "\n" + "Origen: " + origen;
 	}
 	
 	

@@ -10,7 +10,6 @@ public class Main {
 		
 		Almacen a = new Almacen();		
 		
-		a.inicializarmAlmacen();
 		
 		do {
 			switch (opcion = menu.mostrarMenu()) {
@@ -33,10 +32,10 @@ public class Main {
 				a.mostrarInformacion();
 				break;
 
-			default: System.err.println("ERROR DESCONOCIDO");
+			default: System.err.println("SALIENDO");
 				break;
 			}
-		} while (true);
+		} while (opcion!=7);
 
 	}
 

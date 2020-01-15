@@ -15,6 +15,7 @@ public class Menu {
 			System.out.println(": 4-Agregar producto                                  :");
 			System.out.println(": 5-Eliminar un producto                              :");
 			System.out.println(": 6-Mostrar información                               :");
+			System.out.println(": 7-Salir                                             :");
 			System.out.println(":::::::::::::::::::::::::::::::::::::::::::::::::::::::");
 			
 			try {
@@ -22,10 +23,10 @@ public class Menu {
 			} catch (Exception e) {
 				System.out.println("Error al leer la opción, opción no válida");
 			}
-			if (opc<1 || opc>6) {
+			if (opc<1 || opc>7) {
 				System.err.println("Error al leer la opción, opción no válida");
 			}
-		} while (opc<1 || opc >6);
+		} while (opc<1 || opc >7);
 		return opc;
 	}
 	

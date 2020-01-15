@@ -29,10 +29,19 @@ public final class BebidaAzucar extends Producto{
 		this.promocion = promocion;
 	}
 
+	public double getPrecio() {
+		if(promocion) {
+			return super.getPrecio() * 0.9;
+		}else {
+			return super.getPrecio();
+		}
+		
+		
+	}
 
 	@Override
 	public String toString() {
-		return super.toString() + "\n" + "Azucar:" + porcentaje + "%" + "\n" +"En promocion:" + promocion;
+		return "\n" + "AZUCARADA" + super.toString() + "\n" + "Azucar:" + porcentaje + "%" + "\n" +"En promocion:" + promocion;
 	}
 
 
